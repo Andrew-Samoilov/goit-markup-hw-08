@@ -1,0 +1,28 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  width: 100%;
+}
+
+.section-title {
+  color: var(--primary-text-color);
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: 50px;
+}
+
+.section-subtitle {
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+}
+
+.section-text {
+  color: var(--secondary-color);
+  font-style: normal;
+  font-weight: normal;
+}

@@ -1,0 +1,31 @@
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-item a {
+  align-items: center;
+  display: flex;
+}
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+.page-header .container {
+  display: flex;
+}
+
+.header-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.page-header,
+.site-contact,
+.site-nav,
+.site-nav > .list {
+  display: flex;
+  align-items: center;
+}
+
+.site-contact {
+  margin-left: auto;
+}

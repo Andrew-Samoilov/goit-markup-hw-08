@@ -1,0 +1,13 @@
+.features .item {
+    flex-basis: calc(100% / 4 - 30px);
+    background-color: var(--white-color);
+}
+
+.features.section {
+  padding-bottom: 0;
+}
+
+.futures-icon {
+  width: 70px;
+  height: 70px;
+}

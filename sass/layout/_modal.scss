@@ -1,0 +1,201 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: scale(2);
+}
+
+.modal {
+  position: relative;
+  width: 528px;
+  min-height: 182px;
+  padding: 40px;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-close {
+  padding: 0;
+  position: absolute;
+
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  fill: currentColor;
+}
+
+.btn-close:hover {
+  color: var(--accent);
+}
+/* форма */
+.form {
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+  color: var(--primary-text-color);
+}
+
+.form-input {
+  width: 100%;
+  outline: none;
+  padding: 12px 16px 12px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-comment-text:active,
+.form-comment-text:focus,
+.form-comment-text:hover,
+.form-input:active,
+.form-input:hover,
+.form-input:focus {
+  border: 1px solid var(--accent);
+}
+/* Вродi раніше цю діч робив по іншому ?*/
+.form-input:active ~ svg,
+.form-input:hover ~ svg,
+.form-input:focus ~ svg {
+  color: var(--accent);
+}
+
+.form-field label {
+  color: var(--secondary-color);
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+
+.form-comment {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+
+.form-comment label {
+  margin-bottom: 4px;
+}
+
+.form-comment-text {
+  width: 100%;
+  min-height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.form-btn {
+  display: flex;
+  background: var(--accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--white-color);
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  fill: var(--white-color);
+}
+.form-btn-send {
+  display: block;
+  margin: 0 auto;
+}
+.form-btn:hover {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+form .form-btn svg {
+  margin-left: 10px;
+}
+
+.footer-form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(0, -50%);
+  fill: currentColor;
+}
+.input-wrapper {
+  position: relative;
+}
+
+.modal-checkbox {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.modal-checkbox span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  margin-left: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-checkbox:checked + .modal-checkbox span {
+  background-color: var(--accent);
+  border: none;
+}
+
+.modal-checkbox a {
+  color: var(--accent);
+  text-decoration: underline;
+}

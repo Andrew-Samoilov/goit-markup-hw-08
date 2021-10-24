@@ -1,0 +1,76 @@
+/* темный цвет в макете #212121 
+обычный цвет #757575; 
+акцент #2196F3 
+белый - вайт */
+
+/* сброс стилей */
+
+/*  */
+
+/* filter item  */
+
+/* навигация */
+
+/* Ставимо анімацію на ці */
+
+/* синя рисочка на поточній сторінці */
+
+/* контакты в шапке и футере */
+
+/* линия в хеадере */
+
+/* секция */
+
+/* секція команда */
+
+/* .team-border {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--white-color);
+  padding-bottom: 30px;
+} */
+/* footer */
+
+/* герой */
+
+/* в каждой секции елементам списка нужно давать 
+display: flex; сделаю 1н клас на всех */
+
+/* в каждой секции елементам списка нужно давать 
+margin-right: 30px; сделаю 1н клас на всех */
+
+/* секция особенности features*/
+
+/* фон під значком */
+
+/* кнопки в фильтре */
+
+/* секція портфоліо */
+
+/* добавляем flex  */
+
+/* клиенты секция */
+/* .clients .item {
+  flex-basis: calc(100% / 6 - 30px);
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  align-items: center;
+
+  color: #afb1b8;
+
+  display: flex;
+  justify-content: center;
+  height: 92px;
+} */
+/* .clients .item:focus,
+.clients .item:active,
+.clients .item:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+} */
+
+/* лева хрень яку я переробляю непонятно чому */
+
+/* модальное окно */
