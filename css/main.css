@@ -37,7 +37,7 @@ p:last-child {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -76,18 +76,6 @@ body {
   color: var(--secondary-color);
 }
 
-.flex-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-li.item {
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
 button {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -99,9 +87,16 @@ button {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
   width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {
@@ -128,11 +123,29 @@ button {
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .icon-bgr {
@@ -195,8 +208,22 @@ button {
   background-color: #f5f4fa;
 }
 
+.team-list {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
 .team__image {
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .team__name {
@@ -216,11 +243,25 @@ button {
 }
 
 .team__item {
-  flex-basis: calc(100% / 4 - 30px);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-color);
   padding-bottom: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__item {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .hero {
