@@ -551,7 +551,7 @@ button {
   margin-right: 50px;
 }
 
-.header-item a {
+.header-item {
   align-items: center;
   display: flex;
 }
@@ -579,6 +579,25 @@ button {
 
 .site-contact {
   margin-left: auto;
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (max-width: 1199px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1199px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 .logo-header {
@@ -657,6 +676,18 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer-logo-adress-sosial {
+    margin-bottom: 0px;
+  }
+}
+
+.footer-logo-adress {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
     align-items: baseline;
@@ -673,8 +704,15 @@ button {
 
 @media screen and (max-width: 1199px) {
   .footer-connect {
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-sosial {
+    margin-bottom: 60px;
   }
 }
 
@@ -702,6 +740,18 @@ button {
 .footer-logo {
   display: block;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-item {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-item {
+    text-align: center;
+  }
 }
 
 .footer-item:not(:last-child) {

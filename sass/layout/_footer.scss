@@ -4,13 +4,22 @@
   padding-bottom: 60px;
 }
 
-.footer-logo-adress-sosial{ 
+.footer-logo-adress-sosial {
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
     margin-bottom: 60px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
+}
+
+.footer-logo-adress {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer-container {
@@ -26,32 +35,45 @@
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
-  @media screen and (max-width: 1199px){
+  @media screen and (max-width: 1199px) {
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
 }
 .footer-sosial {
-  @media screen and (min-width: 1200px){
-      margin-left: 70px;
-    }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
+
 .footer-submit {
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
-  @media screen and (min-width: 1200px){
-      margin-left: 93px;
-      width: auto;
-  } 
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    width: auto;
+  }
 }
-
 
 .footer-logo {
   display: block;
   margin-bottom: 20px;
+}
+
+.footer-item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer-item:not(:last-child) {
@@ -66,16 +88,15 @@
   border-radius: 4px;
   background: transparent;
   padding: 15px 16px;
-  
-  @media screen and (min-width: 1199px){
+
+  @media screen and (min-width: 1199px) {
     margin-right: 12px;
   }
-  
-  @media screen and (max-width: 1199px){
+
+  @media screen and (max-width: 1199px) {
     width: 100%;
     margin-bottom: 20px;
   }
- 
 }
 
 .footer-input:active,
@@ -97,8 +118,8 @@
   fill: var(--white-color);
 }
 
-.form-btn{
-  @media screen and (max-width: 1199px){
+.form-btn {
+  @media screen and (max-width: 1199px) {
     margin-left: auto;
     margin-right: auto;
   }
