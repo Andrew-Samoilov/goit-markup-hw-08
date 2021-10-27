@@ -165,7 +165,12 @@ button {
   text-decoration: none;
   font-size: 26px;
   line-height: 1.19;
-  margin-right: 93px;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .sosial-list {
@@ -642,6 +647,15 @@ button {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-logo-adress-sosial {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
@@ -657,12 +671,31 @@ button {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-connect {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-sosial {
     margin-left: 70px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-submit {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .footer-submit {
     margin-left: 93px;
+    width: auto;
   }
 }
 
@@ -683,7 +716,19 @@ button {
   border-radius: 4px;
   background: transparent;
   padding: 15px 16px;
-  margin-right: 12px;
+}
+
+@media screen and (min-width: 1199px) {
+  .footer-input {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .footer-input:active,
@@ -703,6 +748,13 @@ button {
 
 .footer-sosial .sosial-list__icon {
   fill: var(--white-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .form-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .backdrop {
