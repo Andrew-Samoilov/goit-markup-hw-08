@@ -1,3 +1,10 @@
+@media screen and (max-width: 767px) {
+  .site-nav-menu,
+  .site-contact {
+    display: none;
+  }
+}
+
 .site-nav .link {
   display: block;
   // padding-top: 32px;
@@ -46,4 +53,9 @@
   font-weight: 500;
   line-height: 1.42;
   letter-spacing: 0.02em;
+}
+@media (min-width: 1199px) {
+  .site-contact-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
