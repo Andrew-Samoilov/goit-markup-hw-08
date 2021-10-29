@@ -11,10 +11,10 @@
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />  
+    />
 
-    <link rel="stylesheet" href="./css/main.min.css">
-    
+    <link rel="stylesheet" href="./css/main.min.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,39 +28,38 @@
     <header class="page-header">
       <div class="container">
         <a href="./index.html" class="logo"
-            >Web<span class="logo-header">Studio</span></a
-          >
-          <nav class="site-nav">
-            <ul class="list menu">
-              
-              <li class="header-item">
-                <a href="./index.html" class="link current">Студия</a>
-              </li>
-              <li class="header-item">
-                <a href="./portfolio.html" class="link">Портфолио</a>
-              </li>
-              <li class="header-item"><a href="" class="link">Контакты</a></li>
-            </ul>
-        
-            <ul class="site-contact list">
-              <li class="header-item">
-                <a href="mailto:info@devstudio.com" class="link">
-                  <svg width="16px" height="12px" class="header-icon">
-                    <use href="./images/sprite.svg#envelope"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="header-item">
-                <a href="tel:+380961111111" class="link">
-                  <svg width="10px" height="16px" class="header-icon">
-                    <use href="./images/sprite.svg#smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </nav>
+          >Web<span class="logo-header">Studio</span></a
+        >
+        <nav class="site-nav">
+          <ul class="site-nav-menu">
+            <li class="header-item">
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+            <li class="header-item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="header-item"><a href="" class="link">Контакты</a></li>
+          </ul>
+
+          <ul class="site-contact">
+            <li class="site-contact-item">
+              <a href="mailto:info@devstudio.com" class="link">
+                <svg width="16px" height="12px" class="header-icon">
+                  <use href="./images/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="site-contact-item">
+              <a href="tel:+380961111111" class="link">
+                <svg width="10px" height="16px" class="header-icon">
+                  <use href="./images/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -132,8 +131,8 @@
           <ul class="list work-list">
             <li class="item work-item">
               <div class="work-box">
-               <img src="./images/box1.jpg" alt="занятие 1" width="370" />
-               <p class="work-text">Десктопные приложения</p>
+                <img src="./images/box1.jpg" alt="занятие 1" width="370" />
+                <p class="work-text">Десктопные приложения</p>
               </div>
             </li>
             <li class="item work-item">
@@ -204,7 +203,9 @@
                 width="270"
               />
               <h3 class="team__name">Ольга Репина</h3>
-              <p lang="en" class="section-text team__role">Frontend Developer</p>
+              <p lang="en" class="section-text team__role">
+                Frontend Developer
+              </p>
               <ul class="list sosial-list">
                 <li class="sosial-list__item">
                   <a href="" class="sosial-list__bgr">
@@ -375,7 +376,6 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-adress-sosial">
-
           <div class="footer-logo-adress">
             <a href="./index.html" class="logo footer-logo"
               >Web<span class="logo-footer">Studio</span></a
@@ -431,17 +431,24 @@
           </div>
         </div>
         <div class="footer-submit">
-          <form class="footer-form-wrapper" autocomplete="off"  novalidate>
-            <label for="footer-email" class="footer-connect">Подпишитесь на рассылку</label>      
-              <input class="footer-input" type="email" id="footer-email" placeholder="E-mail">    
-                <button type="submit" class="button form-btn">Подписаться
-                  <svg width="24" height="24">
-                    <use href="./images/icons.svg#send-btn"></use>
-                  </svg>
-                </button>         
+          <form class="footer-form-wrapper" autocomplete="off" novalidate>
+            <label for="footer-email" class="footer-connect"
+              >Подпишитесь на рассылку</label
+            >
+            <input
+              class="footer-input"
+              type="email"
+              id="footer-email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="button form-btn">
+              Подписаться
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#send-btn"></use>
+              </svg>
+            </button>
           </form>
         </div>
-
       </div>
     </footer>
 
@@ -450,53 +457,69 @@
       <div class="modal" role="group">
         <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
 
-        <form  autocomplete="off" novalidate>         
-            
-            <div class="form-field">
-              <label for="name">Имя</label>        
-              <span class="input-wrapper">     
-                <input class="form-input" type="text" name="name" id="name"/>  
-                <svg class="form-icon" width="12" height="12">
-                  <use href="./images/icons.svg#person"></use>
-                </svg>            
-              </span>
-            </div>
+        <form autocomplete="off" novalidate>
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <span class="input-wrapper">
+              <input class="form-input" type="text" name="name" id="name" />
+              <svg class="form-icon" width="12" height="12">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </span>
+          </div>
 
-            <div class="form-field">
-              <label for="tel">Телефон</label>
-              <span class="input-wrapper">
-                <input class="form-input" type="tel" name="tel" id="tel"/>              
-                  <svg class="form-icon" width="14" height="14">
-                    <use href="./images/icons.svg#tel"></use>
-                  </svg>
-                </span>
-            </div>
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <span class="input-wrapper">
+              <input class="form-input" type="tel" name="tel" id="tel" />
+              <svg class="form-icon" width="14" height="14">
+                <use href="./images/icons.svg#tel"></use>
+              </svg>
+            </span>
+          </div>
 
-            <div class="form-field">
-              <label for="email">Email</label>
-              <span class="input-wrapper"><input class="form-input" type="email" name="email" id="email" />
-                <svg class="form-icon" width="16" height="12">
-                  <use href="./images/icons.svg#mail"></use>
-                </svg>
-             </span>   
-            </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <span class="input-wrapper"
+              ><input class="form-input" type="email" name="email" id="email" />
+              <svg class="form-icon" width="16" height="12">
+                <use href="./images/icons.svg#mail"></use>
+              </svg>
+            </span>
+          </div>
 
-            <div class="form-comment">
-              <label for="comment">Комментарий</label>
-              <textarea class="form-comment-text" name="comment" placeholder="Ведите текст" id="comment"></textarea>
-            </div>
-         
-          <input class="modal-checkbox visually-hidden" type="checkbox" name="oferta" id="modal-checkbox" value="oferta">
-          <label class="modal-checkbox" for="modal-checkbox"><span>
-            <svg class="check-icon" width="11" height="8">
-              <use href="./images/icons.svg#check"></use>
-            </svg>
-          </span>Соглашаюсь с рассылкой и принимаю&nbsp;<a href="">Условия договора</a></label>
-  
-          <button type="submit" class="button form-btn form-btn-send">Отправить</button>
-     
+          <div class="form-comment">
+            <label for="comment">Комментарий</label>
+            <textarea
+              class="form-comment-text"
+              name="comment"
+              placeholder="Ведите текст"
+              id="comment"
+            ></textarea>
+          </div>
+
+          <input
+            class="modal-checkbox visually-hidden"
+            type="checkbox"
+            name="oferta"
+            id="modal-checkbox"
+            value="oferta"
+          />
+          <label class="modal-checkbox" for="modal-checkbox"
+            ><span>
+              <svg class="check-icon" width="11" height="8">
+                <use href="./images/icons.svg#check"></use>
+              </svg> </span
+            >Соглашаюсь с рассылкой и принимаю&nbsp;<a href=""
+              >Условия договора</a
+            ></label
+          >
+
+          <button type="submit" class="button form-btn form-btn-send">
+            Отправить
+          </button>
         </form>
-        
+
         <button class="btn-close" data-modal-close>
           <svg width="11" height="11">
             <use href="./images/icons.svg#close-btn"></use>
@@ -506,9 +529,9 @@
     </div>
 
     <!-- Ставим перед закрывающим тегом body -->
-     <script src="./js/modal.js"></script>
-     
-  <!--  <div class="menu-container js-menu-container" id="mobile-menu">
+    <script src="./js/modal.js"></script>
+
+    <!--  <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
           <path fill-rule="evenodd"
