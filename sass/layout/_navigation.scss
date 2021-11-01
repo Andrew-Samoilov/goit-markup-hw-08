@@ -38,13 +38,16 @@
 }
 .current::after {
   position: absolute;
-  bottom: -1px;
+  bottom: -35px;
   content: "";
   display: block;
   width: 100%;
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent);
+  @media screen and (min-width: 1200px) {
+    bottom: -28px;
+  }
 }
 .site-contact-footer .link,
 .site-contact .link {
