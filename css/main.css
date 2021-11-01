@@ -311,6 +311,12 @@ button {
   }
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero-img-2x.jpg");
+  }
+}
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
