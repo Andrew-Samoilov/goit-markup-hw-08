@@ -23,7 +23,7 @@
 
 .modal {
   position: relative;
-  
+
   min-height: 182px;
   padding: 40px;
   background-color: var(--white-color);
@@ -73,6 +73,7 @@
   line-height: 23px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  text-align: center;
 }
 
 .form-field {
