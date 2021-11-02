@@ -282,11 +282,15 @@ button {
   list-style: none;
 }
 
-.mobile-menu .link {
+.mobile-menu-link {
   text-decoration: none;
   display: block;
-  margin-top: 32px;
+  margin-bottom: 32px;
   color: var(--primary-text-color);
+}
+
+.mobile-menu:first-child {
+  margin-top: 0;
 }
 
 .mobile-sosial {
@@ -301,14 +305,11 @@ button {
 }
 
 .mobile-menu {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  margin-top: 32px;
 }
 
 .mobile-current {
@@ -340,7 +341,19 @@ button {
 }
 
 .mobile-sosial-link {
+  display: flex;
   color: var(--accent);
+  margin-right: 20px;
+  position: relative;
+}
+
+.mobile-sosial-link:before {
+  position: absolute;
+  content: "";
+  left: -10px;
+  height: 100%;
+  width: 1px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .team {
