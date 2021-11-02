@@ -1,19 +1,19 @@
 .work {
-  @media screen and (max-width: 1199px){
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
 
-.work-list{
-  display: flex;    
+.work-list {
+  display: flex;
   margin-left: -30px;
-  margin-top: -30px; 
+  margin-top: -30px;
 }
 
 .work-item {
-    flex-basis: calc(100% / 3 - 30px);  
-    margin-bottom: 30px;
-    margin-left: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .work-box {
@@ -33,4 +33,3 @@
   padding-top: 27px;
   padding-bottom: 27px;
 }
-  
