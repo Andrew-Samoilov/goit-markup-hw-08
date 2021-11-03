@@ -288,8 +288,10 @@ button {
 }
 
 .mobile-menu-link {
+  text-decoration: none;
   display: block;
   margin-bottom: 32px;
+  color: var(--primary-text-color);
 }
 
 .mobile-menu:first-child {
