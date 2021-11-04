@@ -507,12 +507,22 @@
           <textarea class="form-comment-text" name="comment" placeholder="Ведите текст" id="comment"></textarea>
         </div>
 
-        <input class="modal-checkbox visually-hidden" type="checkbox" name="oferta" id="modal-checkbox"
-          value="oferta" />
-        <label class="modal-checkbox" for="modal-checkbox"><span class="mobile-checkbox-icon">
+        <input type="checkbox" id="modal-checkbox" class="modal-checkbox visually-hidden">
+        <label for="modal-checkbox" class="check-text"><span class="check-text-span">
+          <svg class="check-icon" width="11" height="8">
+            <use href="./images/icons.svg#check"></use>
+          </svg></span><p>Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="link modal-checkbox-link">Условия договора</a></p></label>
+
+        <!-- <input class="modal-checkbox visually-hidden" type="checkbox" name="oferta" id="mod-check" value="oferta"/>
+        <label class="" for="mod-check">
+          <span class="modal-checkbox-icon">
             <svg class="check-icon" width="11" height="8">
               <use href="./images/icons.svg#check"></use>
-            </svg> </span>Соглашаюсь с рассылкой и принимаю&nbsp;<a href="">Условия договора</a></label>
+            </svg>
+          </span>
+          <span class="modal-checkbox-text">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="link modal-checkbox-link">Условия договора</a>
+          </span>
+        </label> -->
 
         <button type="submit" class="button form-btn form-btn-send">
           Отправить
@@ -526,10 +536,10 @@
       </button>
     </div>
   </div>
-
-  <!-- Ставим перед закрывающим тегом body -->
+  
   <script src="./js/modal.js"></script>
 
+<!-- Мобільне меню -->
   <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="menu-toggle js-close-menu">
       <svg width="40" height="40" fill="currentColor">
