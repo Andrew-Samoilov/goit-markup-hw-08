@@ -189,7 +189,7 @@ form .form-btn svg {
 }
 .check-text {
   display: flex;
-  margin-bottom: 31px;
+
   color: var(--primary-text-color);
 
   align-items: center;
@@ -199,8 +199,13 @@ form .form-btn svg {
     font-size: 12px;
   }
 }
-
-.check-text span {
+.modal-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 31px;
+}
+.modal-checkbox-icon {
   width: 15px;
   height: 15px;
   border: 2px solid var(--primary-text-color);
@@ -211,10 +216,13 @@ form .form-btn svg {
   justify-content: center;
 }
 
-.modal-checkbox:checked + .check-text span {
+.modal-checkbox:checked + .modal-checkbox .modal-checkbox-icon {
   background-color: var(--accent);
-  fill: var(--white-color);
   border: none;
+}
+
+.modal-checkbox-terms {
+  font-size: 12px;
 }
 
 // .modal-checkbox {
