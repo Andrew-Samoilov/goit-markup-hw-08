@@ -44,20 +44,20 @@
   bottom: 48px;
   left: 40px;
 }
-.mobile-menu,
-.mobile-sosial {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+
 .mobile-sosial a {
   text-decoration: none;
   color: var(--accent);
 }
+
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .mobile-menu-link {
   text-decoration: none;
   display: block;
-  margin-bottom: 32px;
+
   color: var(--primary-text-color);
 }
 .mobile-menu:first-child {
@@ -89,6 +89,15 @@
 .mobile-current {
   color: var(--accent);
 }
+
+.mobile-bottom-tel {
+  margin-bottom: 32px;
+}
+
+.mobile-bottom-email {
+  margin-bottom: 64px;
+}
+
 .mobile-tel {
   color: var(--accent);
   font-weight: 500;
@@ -104,12 +113,10 @@
   line-height: 28px;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
-  margin-top: 32px;
 }
 .mobile-sosial {
   display: flex;
   justify-content: space-around;
-  margin-top: 64px;
 }
 .mobile-sosial-item {
   display: flex;
