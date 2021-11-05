@@ -57,6 +57,13 @@
   line-height: 1.42;
   letter-spacing: 0.02em;
 }
+
+@media (min-width: 768px) {
+  .site-contact-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 @media (min-width: 1199px) {
   .site-contact-item:not(:last-child) {
     margin-right: 30px;
